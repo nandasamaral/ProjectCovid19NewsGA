@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" href="./images/logo.png" />
+  </head>
+  <body>
+    <div id="geral-container">
+      <div id="navbar">
+        <div><a href="index.html"> Página Inicial </a></div>
+        <div><a href="quemsou.html"> Sobre </a></div>
+        <div><a href="contato.html"> Contato </a></div>
+        <div><a href="saibamais.html"> Saiba Mais </a></div>
+      </div>
+
+      <div id="titulocontato">
+        <h1>Entre em Contato !!!</h1>
+      </div>
+
+      <div class="container">
+        <form method="POST" action="mailto:rramsey@gmail.com">
+          <div class="row">
+            <div class="col-25">
+              <label for="name">Seu Nome</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Seu Nome..."
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="country">País</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="franca">França</option>
+                <option value="brasil">Brasil</option>
+                <option value="usa">Estados Unidos</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Seu Email</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="email"
+                name="youremail"
+                placeholder="Qual seu email?"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Sua Mensagem</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Deixe sua mensagem e logo entrarei em contato..."
+                style="height: 200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Enviar!" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
